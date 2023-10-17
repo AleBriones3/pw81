@@ -3,15 +3,20 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\diarioController;
- 
-Route::get('/welcome', [diarioController::class,'metodoInicio'])->name('apodoInicio');
 
+/* RUTAS INDIVIDUALES PAEA EL CONTROLADOR */
+/* Route::get('/welcome', [diarioController::class,'metodoInicio'])->name('apodoInicio');
 Route::get('/form', [diarioController::class,'metodoFormulario'])->name('apodoFormulario');
-
-Route::get('/memories', [diarioController::class,'metodoRecuerdos'])->name('apodoRecuerdo');
-
+Route::get('/memories', [diarioController::class,'metodoRecuerdos'])->name('apodoRecuerdo'); */
 
 
+/* RUTAS AGRUPADAS POR CONTROLADOR */
+Route::controller(diarioController::class)->gruop(function(){
+    Route::get('/', 'metodoInicio')->name('apodoInicio');
+    Route::get('/form', 'metodoFormulario')->name('apodoFormulario');
+    Route::get('/memoeries', 'metodoRecuerdos')->name('apodoRecuerdo');
+    
+});
 
 
 
