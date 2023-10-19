@@ -15,4 +15,20 @@ class diarioController extends Controller
     public function metodoRecuerdos(){
         return view('recuerdos');
     }
+    public function guardarRecuerdo(Request $req){
+        /* return view('recuerdos'); */
+        /* return 'Se está procesando tu recuerdo'; */
+        /* return $req->all(); */
+        echo "<p>";
+        echo $req->ip();
+        echo " - ";
+        echo $req ->path();
+        echo " - ";
+        echo $req ->method();
+        echo " - ";
+        echo $req ->input('txtTitulo');
+        echo " - ";
+        echo $req ->url();
+        echo "</p>";
+    }
 }
