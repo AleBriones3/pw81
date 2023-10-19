@@ -1,4 +1,4 @@
-@props(['type'])
+{{-- @props(['type'])
 
 @php
   switch ($type) {
@@ -15,11 +15,11 @@
       break;
   }   
 @endphp
-
+ --}}
 {{-- @props(['title']) --}}
 
 <article class="alert text-dark p-4" role="alert">
-  <h4 class="font-weight-bold {{$clases}}">{{ $title }}</h4>
+ {{--  <h4 class="font-weight-bold {{$clases}}">{{ $title }}</h4> --}}
   <hr>
   {{ $slot }}
 </article> 

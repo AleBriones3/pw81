@@ -34,6 +34,3 @@
     <p>Esto es un texto de prueba para la vista de Welcome</p>
 </x-alert>
  --}}
-<x-alert type="success" title="Success Alert">
-    This is a success message.
-</x-alert>
