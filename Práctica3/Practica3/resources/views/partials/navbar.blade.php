@@ -16,10 +16,10 @@
               <a class="nav-link {{ request()->routeIs('apodoRecuerdo')?'text-warning-emphasis':'' }}" aria-current="page" href="{{ route('apodoRecuerdo') }}">Recuerdos</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
+         {{--  <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form> --}}
         </div>
       </div>
 </nav>

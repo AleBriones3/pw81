@@ -9,6 +9,4 @@
     @include('partials.pagination')
 @endsection
 
-<x-alert>
-    <p>Esto es un texto de prueba para la vista de Recuerdos</p>
-</x-alert>
+
