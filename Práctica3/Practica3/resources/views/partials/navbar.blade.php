@@ -10,10 +10,10 @@
               <a class="nav-link {{ request()->routeIs('apodoInicio')?'text-warning-emphasis':'' }}" aria-current="page" href="{{ route('apodoInicio') }}">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ request()->routeIs('apodoFormulario')?'text-warning-emphasis':'' }}" aria-current="page" href="{{ route('apodoFormulario') }}">Formulario</a>
+              <a class="nav-link {{ request()->routeIs('recuerdo.create')?'text-warning-emphasis':'' }}" aria-current="page" href="/recuerdo/create">Formulario</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ request()->routeIs('apodoRecuerdo')?'text-warning-emphasis':'' }}" aria-current="page" href="{{ route('apodoRecuerdo') }}">Recuerdos</a>
+              <a class="nav-link {{ request()->routeIs('recuerdo.index')?'text-warning-emphasis':'' }}" aria-current="page" href="/recuerdo">Recuerdos</a>
             </li>
           </ul>
          {{--  <form class="d-flex" role="search">

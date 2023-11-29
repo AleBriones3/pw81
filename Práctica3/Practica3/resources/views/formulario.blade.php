@@ -42,7 +42,7 @@
             </div>
 
             <div class="card-body">
-                <form method="POST" action="/guardarRecuerdo">
+                <form method="POST" action="/recuerdo">
                     @csrf
                     {{-- Se tiene que hacer cada que queramos mandar algo por el form y por post --}}
                     <div class="mb-3">
